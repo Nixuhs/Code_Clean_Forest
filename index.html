@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt-Dokumentation</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Clean Forest</h1>
+    </header>
+    <main>        
+        <section class="images">
+            <h2>Teaserbilder</h2>
+            <img src="teaser1.png" alt="Teaser Bild 1">
+            <img src="teaser2.png" alt="Teaser Bild 2">
+        </section>
+        <section class="intro">
+            <h2>Produktvideo</h2>
+            <video controls>
+                <source src="clean_forest_screencast.mp4" type="video/mp4">
+            </video>
+        </section>
+        <section class="description">
+            <h2 onclick="toggleSection('description-content')">Projektbeschreibung <span class="arrow">&#9662;</span></h2>
+            <div id="description-content" class="content">
+                <p>Prägnante inhaltliche Projektbeschreibung...</p>
+            </div>
+        </section>
+        <!-- Optionale Inhalte -->
+        <section class="context">
+            <h2 onclick="toggleSection('context-content')">Kontext<span class="arrow">&#9662;</span></h2>
+            <div id="context-content" class="content">
+                <p>Problembeschreibung, Ziel- und Fragestellung...</p>
+            </div>
+        </section>
+        <section class="prototyping">
+            <h2 onclick="toggleSection('prototyping-content')">Entwurfsphase und Prototypisierungen<span class="arrow">&#9662;</span></h2>
+            <div id="prototyping-content" class="content">
+                <h3>Ideensammlung</h3>
+                <p></p>
+                <h3>Wireframes</h3>
+                <p></p>
+                <h3>Personas</h3>
+                <p></p>
+                <h3>Prototyp</h3>
+                <p></p>
+            </div>
+        </section>
+        <section class="references">
+            <h2 onclick="toggleSection('references-content')">Referenzen und Inspirationen<span class="arrow">&#9662;</span></h2>
+            <div id="references-content" class="content">
+                <p>Angabe von Referenzen und Inspirationen...</p>
+            </div>
+        </section>
+        <section class="outlook">
+            <h2 onclick="toggleSection('outlook-content')">Ausblick<span class="arrow">&#9662;</span></h2>
+            <div id="outlook-content" class="content">
+                <p>Weiterführende Fragestellungen für zukünftige Ausbaustufen...</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Shu Xin Lin & Aylin Yilmaz @ Hochschule Furtwangen University</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
